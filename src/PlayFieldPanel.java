@@ -1,9 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class PlayFieldPanel extends JPanel {
     private JFrame mainFrame;
+    private boolean whiteTurn = true;
     private final PlayField playField;
     private final Color dark = new Color(85, 136, 34);
     private final Color light = new Color(255, 238, 187);
@@ -17,16 +20,28 @@ public class PlayFieldPanel extends JPanel {
 
     public void clicked(int x, int y) {
         Integer[] l = translate(x, y);
+        ArrayList<Integer> target;
+        if (whiteTurn) {
+            target = new ArrayList<>(List.of(1,3));
+        } else {
+            target = new ArrayList<>(List.of(2,4));
+        }
+
         if (selected == null) {
-            if (this.playField.getField()[l[0]][l[1]] != -1) {
+            System.out.println(target.contains(this.playField.getField()[l[0]][l[1]]));
+            System.out.println(this.playField.getField()[l[0]][l[1]]);
+            if (target.contains(this.playField.getField()[l[0]][l[1]])) {
                 this.selected = l;
             }
         } else {
             if (Objects.equals(selected[0], l[0]) && Objects.equals(selected[1], l[1])) {
                 this.selected = null;
+            } else if (target.contains(this.playField.getField()[l[0]][l[1]])) {
+                this.selected = l;
+            } else {
+                this.selected = null;
             }
         }
-        // Schedule a repaint instead of directly calling paintComponent
         repaint();
     }
 
@@ -42,7 +57,6 @@ public class PlayFieldPanel extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
-        // Ensure the previous painting is cleared
         super.paintComponent(g);
 
         Integer[][] field = playField.getField();
