@@ -2,6 +2,8 @@
 
 This is a simple implementation of the classic game of Checkers (also known as Draughts) built in Java with Swing for the GUI.
 
+![image](https://github.com/JackReaperCZ/Checkers/assets/68709434/26903d49-7679-43a3-ad14-42ff99456638)
+
 ## Features
 
 - Play against an AI opponent.
