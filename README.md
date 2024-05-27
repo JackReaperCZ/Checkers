@@ -12,7 +12,7 @@ This is a simple implementation of the classic game of Checkers (also known as D
 
 ## Getting Started
 
-To run the game, make sure you have JDK 22 installed on your system.
+To run the game, make sure you have [JDK 22](https://www.oracle.com/cz/java/technologies/downloads/#jdk22-windows) installed on your system.
 
 1. Clone this repository to your local machine.
 
