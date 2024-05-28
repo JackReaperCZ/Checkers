@@ -31,7 +31,7 @@ public class CheckersPanel extends JPanel {
      */
     public CheckersPanel() {
         try {
-            this.crown = ImageIO.read(new File("res/crown.png"));
+            this.crown = ImageIO.read(new File("./src/res/crown.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
