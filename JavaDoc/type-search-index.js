@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Checkers"},{"p":"<Unnamed>","l":"CheckersDialog"},{"p":"<Unnamed>","l":"CheckersPanel"},{"p":"<Unnamed>","l":"Move"},{"p":"<Unnamed>","l":"Piece"},{"p":"<Unnamed>","l":"PieceType"}];updateSearchResults();
