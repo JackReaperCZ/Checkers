@@ -14,6 +14,8 @@ This is a simple implementation of the classic game of Checkers (also known as D
 
 To run the game, make sure you have [JDK 22](https://www.oracle.com/cz/java/technologies/downloads/#jdk22-windows) installed on your system.
 
+[JavaDoc](https://github.com/JackReaperCZ/Checkers/tree/documentation) for more info.
+
 1. Clone this repository to your local machine.
 
    ```bash
